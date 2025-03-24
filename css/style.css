@@ -220,7 +220,7 @@
     height: 100%;
     left: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, .6);
+    background: rgba(0, 0, 0, 0.151);
     display: flex;
     align-items: center;
 }
@@ -307,6 +307,36 @@
 }
 
 /*** Features End ***/
+
+
+/* Zona prueba video celular */
+.mockup {
+    width: 300px; /* Ajusta según el tamaño del celular */
+    height: 600px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .mockup img {
+    width: 100%;
+    position: absolute;
+    z-index: 2; /* Mockup encima del video */
+    pointer-events: none; /* Evita que interfiera con el video */
+  }
+  
+  .mockup video {
+    width: 100%; /* Ajusta según la pantalla del mockup */
+    height: 100%;
+    position: absolute;
+    z-index: 1; /* Video debajo del mockup */
+    object-fit: cover;
+  }
+  
+  
+  
+
 
 /*** About Start ***/
 .about .about-item .about-item-inner {
